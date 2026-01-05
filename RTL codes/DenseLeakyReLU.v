@@ -13,12 +13,6 @@
 // stage 4: clamping 
 // stage 5: LeakyReLU
 
-// log 
-// 14-09-2025: pick up from bias addition logic 
-// 14-09-2025 (19:47): flattening is left and clamping is left
-// 15-09-2025 (00:00): weights and biases unflattening
-// 15-09-2025 (00:10): check once again if the module is working, signed accomodation needs to be done
-
 module dense #(
     parameter m = 10, // no of inputs
     parameter n = 100, // no of outputs 
