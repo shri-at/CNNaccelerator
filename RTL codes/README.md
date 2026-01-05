@@ -1,4 +1,4 @@
-## RTL Overview
+### RTL Overview
 
 This repository contains the final synthesizable RTL for a reconfigurable CNN accelerator datapath. The design consists of a Partial Feature Map Producer (PFPM) and two dense layer modules.
 
