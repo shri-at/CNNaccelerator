@@ -4,7 +4,7 @@ This repository contains the final synthesizable RTL implementation of a reconfi
 
 ---
 
-### Partial Feature Map Producer (PFPM)
+## Partial Feature Map Producer (PFPM)
 
 The PFPM module acts as the core computational block of the convolutional layer. It performs valid cross-correlation between the input feature map and a set of kernels to generate partial feature maps. Partial feature maps corresponding to all input depths are accumulated along with the bias matrix to produce the final feature map.
 
@@ -14,7 +14,7 @@ The PFPM datapath is fully pipelined, allowing one output to be produced per cyc
 
 ---
 
-### Dense Layer Modules
+## Dense Layer Modules
 
 Two dense layer modules are provided:
 
@@ -27,13 +27,13 @@ Both dense layer modules incorporate batch processing, where outputs are compute
 
 ---
 
-### Fixed-Point Representation
+## Fixed-Point Representation
 
 All computations use signed Q1.15 fixed-point arithmetic. This format provides sufficient numerical precision for CNN workloads while significantly reducing hardware complexity compared to floating-point implementations. Intermediate results are appropriately shifted and clamped to prevent overflow.
 
 ---
 
-### Design Characteristics
+## Design Characteristics
 
 - Fully pipelined datapaths for improved throughput
 - Batch processing support in dense layers for latency–area trade-offs
